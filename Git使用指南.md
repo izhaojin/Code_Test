@@ -53,3 +53,5 @@ $ git push origin master
 
 下面图片的意思是本地Git仓库`note`，对应到GitHub的仓库`izhaojin/Notes`
 ![](image/Git使用指南/1650738951778.png)
+
+# 验证

@@ -45,3 +45,11 @@ master 69e702d] 添加到远程
  # 推送到 Github: 仓库是origin，分支是master
 $ git push origin master   
 ```
+
+## GitHub connect error
+不同GitHub repo在Git上面也要有不同的仓库名称。
+默认名称是origin，当需要同事操作多个仓库的时候，需要取不同的名字
+一个简单的方案如下图，在VSC上面直接点+号，可以添加一个新的Git仓库名称
+
+下面图片的意思是本地Git仓库`note`，对应到GitHub的仓库`izhaojin/Notes`
+![](image/Git使用指南/1650738951778.png)

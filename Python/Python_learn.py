@@ -66,9 +66,6 @@ import  mpmath as mp
 f1 = lambda x:x*x
 mp.plot(f1,[-10,10])
 
-f2 = lambda x,y:x*np.exp(-x**2-y**2)
-mp.splot(f2,[-3,3],[-2,2])
-
 #%% 数值微分方案
 # 参考文献：https://blogs.mathworks.com/cleve/2013/10/14/complex-step-differentiation/
 import sympy as sym
@@ -104,3 +101,4 @@ plt.plot(eps_n,label='normal')
 plt.plot(eps_n2,label='normal2')
 plt.yscale('log')
 plt.legend()
+plt.show()

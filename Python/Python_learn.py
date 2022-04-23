@@ -102,3 +102,15 @@ plt.plot(eps_n2,label='normal2')
 plt.yscale('log')
 plt.legend()
 plt.show()
+
+#%% 微分函数生产
+def zdiff(f):
+    h = 1/1e20
+    return  lambda x:np.imag(f(x+h*1j)/h)
+    
+f1 = lambda x:np.sin(x**2)
+df1 = zdiff(f1)
+x = np.arange(0,2*pi,0.01)
+plt.plot(x,f1(x))
+plt.plot(x,df1(x),'--')
+plt.show()

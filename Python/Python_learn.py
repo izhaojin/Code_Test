@@ -104,6 +104,10 @@ plt.legend()
 plt.show()
 
 #%% 微分函数生产
+# C++ 太坑了：定义函数的时候，变量是double
+# 微分运算的时候，变量是complex
+# 如何把一个变量是double的函数转换成一个变量是complex的函数？
+
 def zdiff(f):
     h = 1/1e20
     return  lambda x:np.imag(f(x+h*1j)/h)
